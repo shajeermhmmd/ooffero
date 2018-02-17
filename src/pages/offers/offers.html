@@ -1,0 +1,153 @@
+<ion-header>
+  <ion-navbar class="header-search">
+
+    <ul>
+      <li>
+        <ion-icon class="header-search-icon" name="search"></ion-icon>
+      </li>
+      <li class="spc-li">
+        <ion-input class="header-search-box" type="text" placeholder="Search" value=""></ion-input>
+      </li>
+    </ul>
+
+  </ion-navbar>
+  <div>
+    <ion-segment [(ngModel)]="offerType" class="offer-segment">
+      <ion-segment-button value="all_offers">
+        Offeres
+      </ion-segment-button>
+      <ion-segment-button value="shortlisted">
+        Short Listed
+      </ion-segment-button>
+      <ion-segment-button value="viewed">
+        Viewed Offers
+      </ion-segment-button>
+
+    </ion-segment>
+  </div>
+
+</ion-header>
+
+<ion-content class="offer-content">
+
+  <ion-row>
+    <ion-item no-lines>
+      <ion-scroll scrollX="true" scroll-avatar>
+
+        <div class="store-avatar-container">
+          <div class="store-avatar">
+            <img src="assets/imgs/store.jpg" class="scroll-item img-circle" />
+          </div>
+          <div class="store-avatar-text">Textes</div>
+        </div>
+
+        <div class="store-avatar-container">
+          <div class="store-avatar">
+            <img src="assets/imgs/store.jpg" class="scroll-item img-circle" />
+          </div>
+          <div class="store-avatar-text">Textes</div>
+        </div>
+
+        <div class="store-avatar-container">
+          <div class="store-avatar">
+            <img src="assets/imgs/store.jpg" class="scroll-item img-circle" />
+          </div>
+          <div class="store-avatar-text">Textes</div>
+        </div>
+        <div class="store-avatar-container">
+          <div class="store-avatar">
+            <img src="assets/imgs/store.jpg" class="scroll-item img-circle" />
+          </div>
+          <div class="store-avatar-text">Textes</div>
+        </div>
+        <div class="store-avatar-container">
+          <div class="store-avatar">
+            <img src="assets/imgs/store.jpg" class="scroll-item img-circle" />
+          </div>
+          <div class="store-avatar-text">Textes</div>
+        </div>
+        <div class="store-avatar-container">
+          <div class="store-avatar">
+            <img src="assets/imgs/store.jpg" class="scroll-item img-circle" />
+          </div>
+          <div class="store-avatar-text">Textes</div>
+        </div>
+        <div class="store-avatar-container">
+          <div class="store-avatar">
+            <img src="assets/imgs/store.jpg" class="scroll-item img-circle" />
+          </div>
+          <div class="store-avatar-text">Textes</div>
+        </div>
+        <div class="store-avatar-container">
+          <div class="store-avatar">
+            <img src="assets/imgs/store.jpg" class="scroll-item img-circle" />
+          </div>
+          <div class="store-avatar-text">Textes</div>
+        </div>
+        <div class="store-avatar-container">
+          <div class="store-avatar">
+            <img src="assets/imgs/store.jpg" class="scroll-item img-circle" />
+          </div>
+          <div class="store-avatar-text">Textes</div>
+        </div>
+        <div class="store-avatar-container">
+          <div class="store-avatar">
+            <img src="assets/imgs/store.jpg" class="scroll-item img-circle" />
+          </div>
+          <div class="store-avatar-text">Textes</div>
+        </div>
+        <div class="store-avatar-container">
+          <div class="store-avatar">
+            <img src="assets/imgs/store.jpg" class="scroll-item img-circle" />
+          </div>
+          <div class="store-avatar-text">Textes</div>
+        </div>
+        <div class="store-avatar-container">
+          <div class="store-avatar">
+            <img src="assets/imgs/store.jpg" class="scroll-item img-circle" />
+          </div>
+          <div class="store-avatar-text">Textes</div>
+        </div>
+        <div class="store-avatar-container">
+          <div class="store-avatar">
+            <img src="assets/imgs/store.jpg" class="scroll-item img-circle" />
+          </div>
+          <div class="store-avatar-text">Textes</div>
+        </div>
+
+      </ion-scroll>
+    </ion-item>
+  </ion-row>
+
+  <div [ngSwitch]="offerType">
+    <ion-list *ngSwitchCase="'all_offers'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/store.jpg">
+        </ion-thumbnail>
+        <h2>Ruby</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'shortlisted'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/store.jpg">
+        </ion-thumbnail>
+        <h2>Luna</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'viewed'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/store.jpg">
+        </ion-thumbnail>
+        <h2>viewed</h2>
+      </ion-item>
+    </ion-list>
+
+
+  </div>
+
+</ion-content>
