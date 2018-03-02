@@ -69,7 +69,6 @@ ion-scroll[scrollX] {
   }
 //////////////////////////
 
-
 .store-avatar-container{
     display: inline-block;
     width:45px;
@@ -82,8 +81,108 @@ ion-scroll[scrollX] {
 
 .store-avatar-text{
     font-size: 11px;
+    margin-top: 3px;
+    text-overflow: ellipsis;
+    width: 42px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .img-circle {
     border-radius: 50% !important;
+}
+
+.image-container {
+    min-height: 150px;
+    background-size: cover;
+    background-position: center;
+    // background-repeat: no-repeat
+}
+
+.shop-title{
+    font-size: 13px;
+    font-weight: bold;
+}
+.shops-search{
+    width:100%;
+}
+.search-shop-title{
+    font-size: 13px;
+    font-weight: bold;
+    float:right;
+}
+.full-width-section{
+    width: 100%;
+    height: 10px;
+    background: #DCDCDC;
+}
+.notification-badge{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.item-container{
+    border: 1px solid #DCDCDC;
+}
+.product-img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.product-name{
+    font-size:15px;
+    text-align:center;
+    color:#0096FF;
+    text-overflow: ellipsis;
+    width: 145px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.product-price{
+    font-weight: bold;
+    font-size:13px;
+    float: right;
+    margin-right: 9px;
+}
+.product-info{
+    // text-align: center;
+}
+.prd-currency{
+    font-size: 14px;
+}
+.prd-rate{
+    font-size: 18px;
+}
+.product-details{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 0;
+    text-align: center;
+    width: 145px;
+}
+.product-off{
+    display: inline-block;
+    border: 1px solid #000;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+    z-index: 9;
+    background: #D5171C;
+    color: #fff;
+
+}
+.dicount-rate{
+    position: relative;
+    top: 7px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.discount-label{
+    font-size: 7px;
+    font-weight: bold;
 }
