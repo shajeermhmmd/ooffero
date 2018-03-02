@@ -128,6 +128,7 @@ ion-scroll[scrollX] {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    max-height: 135px;
 }
 .product-name{
     font-size:15px;
@@ -185,4 +186,8 @@ ion-scroll[scrollX] {
 .discount-label{
     font-size: 7px;
     font-weight: bold;
+}
+
+.item-container{
+    max-height: 220px;
 }

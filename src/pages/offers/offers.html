@@ -40,15 +40,15 @@
       <ion-row>
         <ion-item no-lines>
           <div class="shops-search">
-            <span class="shop-title">Near By Shops</span>
+            <span class="shop-title">Stores</span>
             <span class="search-shop-title">
-              <ion-icon name="search"></ion-icon> Search All >></span>
+              <ion-icon name="search"></ion-icon> Search</span>
           </div>
           <ion-scroll scrollX="true" scroll-avatar>
 
             <div class="store-avatar-container" *ngFor="let shop of allShops">
               <div class="store-avatar">
-                <img [src]="shop.imageSrc" class="scroll-item img-circle" />
+                <img [src]="shop.imageSrc"  class="scroll-item img-circle" />
               </div>
               <div class="store-avatar-text">{{shop.shopName}}</div>
             </div>

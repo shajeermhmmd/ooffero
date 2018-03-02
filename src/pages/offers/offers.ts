@@ -48,6 +48,26 @@ export class OffersPage {
       id: 1,
       shopName: "Oberon Mall",
       imageSrc: "assets/stores/2.gif"
+    },
+    {
+      id: 1,
+      shopName: "Qatar Mall",
+      imageSrc: "assets/stores/3.jpg"
+    },
+    {
+      id: 1,
+      shopName: "Oberon Mall",
+      imageSrc: "assets/stores/2.gif"
+    },
+    {
+      id: 1,
+      shopName: "Qatar Mall",
+      imageSrc: "assets/stores/3.jpg"
+    },
+    {
+      id: 1,
+      shopName: "Oberon Mall",
+      imageSrc: "assets/stores/2.gif"
     }];
 
 
