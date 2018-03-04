@@ -42,13 +42,12 @@
           <div class="shops-search">
             <span class="shop-title">Stores</span>
             <span class="search-shop-title">
-              <ion-icon name="search"></ion-icon> Search</span>
+              <ion-icon name="search" (click)="openShopPopOver($event)"></ion-icon> Search</span>
           </div>
           <ion-scroll scrollX="true" scroll-avatar>
-
             <div class="store-avatar-container" *ngFor="let shop of allShops">
               <div class="store-avatar">
-                <img [src]="shop.imageSrc"  class="scroll-item img-circle" />
+                <img [src]="shop.imageSrc" class="scroll-item img-circle" />
               </div>
               <div class="store-avatar-text">{{shop.shopName}}</div>
             </div>
@@ -74,8 +73,13 @@
                 <div class="product-details">{{offer.discription}}</div>
                 <img class="product-img" [src]='offer.ImageSrc'>
                 <div class="product-info">
-                  <div class="product-off"><span class="dicount-rate">{{offer.offer}}%</span><br/><span class="discount-label">DISCOUNT</span></div>
+                  <div class="product-off">
+                    <span class="dicount-rate">{{offer.offer}}%</span>
+                    <br/>
+                    <span class="discount-label">DISCOUNT</span>
+                  </div>
                   <div class="product-price"> <span class="prd-currency">QAR</span> <span class="prd-rate">{{offer.price}}</span></div>
+                 
                 </div>
               </div>
             </ion-col>
