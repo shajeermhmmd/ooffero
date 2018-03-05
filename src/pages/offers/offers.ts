@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { PopoverController } from 'ionic-angular';
+import { PopoverController, ModalController  } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -13,11 +13,13 @@ export class OffersPage {
   viewedOffers: string = "ViewdOffersPage";
   shortlistedOffers: string = "ShortlistedOffersPage";
   storePopOver:string = "StoresPopoverPage";
+  productDetailModal:string = "ProductDetailModalPage";
+
   public offers: any;
   offerType: any;
   allShops: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public popoverCtrl: PopoverController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public popoverCtrl: PopoverController, public modalCtrl: ModalController) {
   }
 
   ionViewDidLoad() {
@@ -116,12 +118,16 @@ export class OffersPage {
     }];
   }
 
-  openShopPopOver(myEvent){
-    console.log('popover')
+  openShopPopOver(myEvent){    
     let popover = this.popoverCtrl.create(this.storePopOver);
     popover.present({
       ev: myEvent
     });
+  }
+
+  openProductDetailModal() {
+    let modal = this.modalCtrl.create(this.productDetailModal);
+    modal.present();
   }
 
 }

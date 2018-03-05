@@ -41,8 +41,8 @@
         <ion-item no-lines>
           <div class="shops-search">
             <span class="shop-title">Stores</span>
-            <span class="search-shop-title">
-              <ion-icon name="search" (click)="openShopPopOver($event)"></ion-icon> Search</span>
+            <span class="search-shop-title" (click)="openShopPopOver($event)">
+              <ion-icon name="search" ></ion-icon> Search</span>
           </div>
           <ion-scroll scrollX="true" scroll-avatar>
             <div class="store-avatar-container" *ngFor="let shop of allShops">
@@ -68,7 +68,7 @@
           <ion-row>
             <ion-col col-6 col-md-4 col-xl-3 class="item-container" *ngFor="let offer of offers">
               <!-- <div class="image-container" [style.background-image]="'url(assets/imgs/store.jpg)'"> -->
-              <div class="image-container">
+              <div class="image-container" (click) = "openProductDetailModal()">
                 <div class="product-name">{{offer.productName}}</div>
                 <div class="product-details">{{offer.discription}}</div>
                 <img class="product-img" [src]='offer.ImageSrc'>

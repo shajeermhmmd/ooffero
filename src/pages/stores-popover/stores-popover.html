@@ -1,23 +1,12 @@
-<ion-list radio-group [(ngModel)]="fontFamily" class="popover-page">
-  <ion-row>
-   test
+<ion-list radio-group class="popover-page" style="max-height: 365px;">
+  <ion-row class="store-filter-header">
+    <ion-col col-12 class="filter-store-title" style="margin-top: 15px;">Filter by Stores</ion-col>
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
   </ion-row>
 
-  <ion-item class="text-athelas">
-    <ion-label>Athelas</ion-label>
-    <ion-radio value="Athelas"></ion-radio>
+  <ion-item class="text-athelas" *ngFor="let store of stores">
+    <ion-label>{{store?.name}}</ion-label>
+    <ion-checkbox color="#488aff" checked="{{store.checked}}"></ion-checkbox>
   </ion-item>
-  <ion-item class="text-charter">
-    <ion-label>Charter</ion-label>
-    <ion-radio value="Charter"></ion-radio>
-  </ion-item>
-  <ion-item class="text-charter">
-    <ion-label>Charter</ion-label>
-    <ion-radio value="Charter"></ion-radio>
-  </ion-item>
-  <ion-item class="text-charter">
-    <ion-label>Charter</ion-label>
-    <ion-radio value="Charter"></ion-radio>
-  </ion-item>
- 
+
 </ion-list>

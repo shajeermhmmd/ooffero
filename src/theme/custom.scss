@@ -271,4 +271,14 @@ ion-scroll[scrollX] {
     border-width: $hairlines-width;
   }
 }
+/////////////////////////////////////////////////////
 
+.store-filter-header{
+    border-bottom: 1px solid #C7C6CB;
+}
+.filter-store-title{
+    color: #488aff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
