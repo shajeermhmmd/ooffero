@@ -128,7 +128,7 @@ ion-scroll[scrollX] {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    max-height: 135px;
+    max-height: 100px;
 }
 .product-name{
     font-size:15px;
@@ -144,12 +144,16 @@ ion-scroll[scrollX] {
     font-size:13px;
     float: right;
     margin-right: 9px;
+    background: #FEF203;
+    color: #D5171C;
 }
 .product-info{
     // text-align: center;
 }
 .prd-currency{
     font-size: 14px;
+    // writing-mode: vertical-rl;
+    // text-orientation: upright;
 }
 .prd-rate{
     font-size: 18px;
@@ -281,4 +285,11 @@ ion-scroll[scrollX] {
     text-align: center;
     font-size: 15px;
     font-weight: bold;
+}
+
+.product-img-on-detail{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-height: 160px;
 }

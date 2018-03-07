@@ -1,7 +1,7 @@
 <ion-list radio-group class="popover-page" style="max-height: 365px;">
   <ion-row class="store-filter-header">
-    <ion-col col-12 class="filter-store-title" style="margin-top: 15px;">Filter by Stores</ion-col>
-    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    <!-- <ion-col col-12 class="filter-store-title" style="margin-top: 15px;">Filter by Stores</ion-col> -->
+    <ion-searchbar (ionInput)="getItems($event)" placeholder="Search for stores"></ion-searchbar>
   </ion-row>
 
   <ion-item class="text-athelas" *ngFor="let store of stores">

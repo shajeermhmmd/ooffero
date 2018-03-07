@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,ViewController } from 'ionic-angular';
 
 /**
  * Generated class for the ProductDetailModalPage page.
@@ -14,12 +14,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'product-detail-modal.html',
 })
 export class ProductDetailModalPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  public currentOffer:any;
+  constructor(public navCtrl: NavController, public navParams: NavParams,public viewCtrl: ViewController) {
+    this.currentOffer = navParams.get('currentOffer');
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ProductDetailModalPage');
   }
 
+  dismiss() {
+    this.viewCtrl.dismiss();
+  }
 }

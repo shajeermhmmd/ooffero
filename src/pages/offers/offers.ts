@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PopoverController, ModalController  } from 'ionic-angular';
+import * as _ from 'lodash';
 
 @IonicPage()
 @Component({
@@ -77,7 +78,7 @@ export class OffersPage {
 
 
     this.offers = [{
-      id: "1",
+      id: 1,
       productName: "Febreze",
       discription: "Air freshner 300ml",
       offer: "56",
@@ -85,35 +86,35 @@ export class OffersPage {
       ImageSrc: "assets/products/3.jpg"
     },
     {
-      id: "2",
+      id: 2,
       productName: "Johnsons",
       discription: "Kids Shampoo",
       offer: "48",
-      price: '14.7',
+      price: 14.7,
       ImageSrc: "assets/products/2.jpg"
     },
     {
-      id: "3",
+      id: 3,
       productName: "Gillette Blue2",
       discription: "10 + 4pcs",
       offer: "77",
-      price: '17.75',
+      price: 17.75,
       ImageSrc: "assets/products/5.jpg"
     },
     {
-      id: "4",
+      id: 4,
       productName: "Samsung",
       discription: "Smart, FHD TV",
       offer: "65",
-      price: '1,099',
+      price: 1.80,
       ImageSrc: "assets/products/4.jpg"
     },
     {
-      id: "5",
+      id: 5,
       productName: "Bestway",
       discription: "Steel Pro Frame Pool Set",
       offer: "77",
-      price: '399',
+      price: 399,
       ImageSrc: "assets/products/1.jpg"
     }];
   }
@@ -125,8 +126,9 @@ export class OffersPage {
     });
   }
 
-  openProductDetailModal() {
-    let modal = this.modalCtrl.create(this.productDetailModal);
+  openProductDetailModal(modalData) {    
+    let currentOffer = _.find(this.offers, { "id": modalData });
+    let modal = this.modalCtrl.create(this.productDetailModal, {currentOffer: currentOffer} );
     modal.present();
   }
 
