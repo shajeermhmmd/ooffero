@@ -25,7 +25,7 @@
 }
 
 .segment-ios ion-segment-button.segment-button.segment-activated{
-    background-color: #0097FF !important;
+    background-color: map-get($colors, theme) !important;
     color: #fff;
 }
 
@@ -67,13 +67,15 @@ ion-scroll[scrollX] {
   ::-webkit-scrollbar{
     display:none;
   }
+
+
 //////////////////////////
 
 .store-avatar-container{
     display: inline-block;
     width:45px;
     height: 45px;
-    border: 2px solid #0097FF;
+    border: 2px solid  map-get($colors, theme);
     border-radius: 50%;
     margin-right: 6px;
     padding: 2px;
@@ -133,7 +135,7 @@ ion-scroll[scrollX] {
 .product-name{
     font-size:15px;
     text-align:center;
-    color:#0096FF;
+    color: map-get($colors, theme);
     text-overflow: ellipsis;
     width: 145px;
     white-space: nowrap;
@@ -281,7 +283,7 @@ ion-scroll[scrollX] {
     border-bottom: 1px solid #C7C6CB;
 }
 .filter-store-title{
-    color: #488aff;
+    color:  map-get($colors, theme);
     text-align: center;
     font-size: 15px;
     font-weight: bold;
@@ -292,4 +294,52 @@ ion-scroll[scrollX] {
     margin-right: auto;
     display: block;
     max-height: 160px;
+}
+.detail-view-stole-logo{
+    width: 50px;
+    float: right;
+}
+.detail-view-store-name{
+    margin: auto !important;
+    color: #D5171C;
+    font-size: 18px;
+    font-weight: bold;
+}
+.detail-page-product-title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color:  map-get($colors, theme);
+}
+.detail-page-product-discription{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    font-style: italic;
+}
+
+.detail-page-offer-marker{
+    border: 2px solid #D5171C;
+    display: inline-block;
+    background: #D5171C;
+    height: 43px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px,
+    // border :2px solid #D5171C;
+}
+.detail-page-price-marker{
+    border: 2px solid #D5171C;
+    display: inline-block;
+    background: #fff;
+    height: 43px;
+    color: #D5171C;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px
+}
+.offer-details{
+    border: 1px solid #D5171C;
 }

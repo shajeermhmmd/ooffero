@@ -38,7 +38,8 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  theme:      #0097FF
 );
 $list-md-border-color: #C7C6CB;
 
@@ -88,7 +89,19 @@ $list-md-border-color: #C7C6CB;
 @import "noto-sans";
 @import "custom";
 
-$toolbar-background: #0097FF;
+// @font-face{
+//   font-family: "Titillium Light";
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('../assets/fonts/Titillium/TitilliumWeb-Light.ttf');
+// }
+// $font-family-base: "Titillium Light";
+// body{
+//   font-family: "Titillium Light" !important;
+// }
+
+// $toolbar-background: #0097FF;
+$toolbar-background:  map-get($colors, theme);
 
 // #0097FF - Blue color
 // #44B058 - green

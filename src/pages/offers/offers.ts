@@ -83,7 +83,9 @@ export class OffersPage {
       discription: "Air freshner 300ml",
       offer: "56",
       price: '9.50',
-      ImageSrc: "assets/products/3.jpg"
+      ImageSrc: "assets/products/3.jpg",
+      store: "LULU",
+      storeLogo: "assets/stores/3.jpg"
     },
     {
       id: 2,
@@ -91,7 +93,9 @@ export class OffersPage {
       discription: "Kids Shampoo",
       offer: "48",
       price: 14.7,
-      ImageSrc: "assets/products/2.jpg"
+      ImageSrc: "assets/products/2.jpg",
+      store: "Safari Mall",
+      storeLogo: "assets/stores/2.gif"
     },
     {
       id: 3,
@@ -99,7 +103,9 @@ export class OffersPage {
       discription: "10 + 4pcs",
       offer: "77",
       price: 17.75,
-      ImageSrc: "assets/products/5.jpg"
+      ImageSrc: "assets/products/5.jpg",
+      store: "Qatar Mall",
+      storeLogo: "assets/stores/3.jpg"
     },
     {
       id: 4,
@@ -107,7 +113,9 @@ export class OffersPage {
       discription: "Smart, FHD TV",
       offer: "65",
       price: 1.80,
-      ImageSrc: "assets/products/4.jpg"
+      ImageSrc: "assets/products/4.jpg",
+      store: "LULU",
+      storeLogo: "assets/stores/2.gif"
     },
     {
       id: 5,
@@ -115,7 +123,9 @@ export class OffersPage {
       discription: "Steel Pro Frame Pool Set",
       offer: "77",
       price: 399,
-      ImageSrc: "assets/products/1.jpg"
+      ImageSrc: "assets/products/1.jpg",
+      store: "Al-meera",
+      storeLogo: "assets/stores/3.jpg"
     }];
   }
 
