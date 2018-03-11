@@ -1,3 +1,9 @@
+.font-bold{
+    font-weight:bold;
+}
+.border-bottom{
+    border-bottom: 1px solid map-get($colors, theme);
+}
 .header-search-box input{
     border-bottom: 1px solid #fff;
     color: #fff;
@@ -132,7 +138,7 @@ ion-scroll[scrollX] {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    max-height: 100px;
+    max-height: 135px;
 }
 .product-name{
     font-size:15px;
@@ -142,11 +148,13 @@ ion-scroll[scrollX] {
     width: 145px;
     white-space: nowrap;
     overflow: hidden;
+    font-weight: bold;
 }
 .product-price{
     z-index: 99999 !important;
     position: absolute;
     right: 0px;
+    bottom: 5px;
     font-weight: bold;
 }
 .product-info{
@@ -165,7 +173,6 @@ ion-scroll[scrollX] {
 }
 .product-details{
     font-size: 12px;
-    font-weight: bold;
     margin-top: 0;
     text-align: center;
     width: 145px;
@@ -302,12 +309,11 @@ ion-scroll[scrollX] {
     width: 50px;
     float: right;
 }
-.detail-view-store-name{
-    color: map-get($colors, theme);
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 5px;
+.detail-view-store-name{    
+    font-size: 15px;   
     text-transform: uppercase;
+    position: relative;
+    top:5px;
 }
 .detail-page-product-title{
     text-align: center;
@@ -370,3 +376,46 @@ ion-scroll[scrollX] {
 .yellow-bg{
     background: #FEF203;
 }
+
+.store-direction-icon{
+    font-size: 30px;
+    color: #004C71;
+    position: relative;
+    top: 22px;
+}
+
+.product-addon-data {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+
+  .price-container{
+    position: relative;
+    left: -8px;
+  }
+  .offer-info{
+      font-size:10px;
+      text-align: center;
+  }
+//////////////////////////
+
+.effect6
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect6:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
