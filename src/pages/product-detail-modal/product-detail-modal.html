@@ -16,6 +16,17 @@
 <ion-content padding>
   <!-- <div class="detail-view-store-name">{{currentOffer?.store}}</div> -->
   <!-- slider-container -->
+  <ion-row>
+    <ion-col col-12>
+      <div class="detail-page-product-title">
+        {{currentOffer?.productName}}
+      </div>
+      <div class="detail-page-product-discription">
+        {{currentOffer?.discription}}
+      </div>
+    </ion-col>
+  </ion-row>
+
   <ion-slides class=" effect6" centeredSlides=true pager=true zoom=true>
     <ion-slide>
       <div class="swiper-zoom-container">
@@ -38,34 +49,33 @@
   <ion-grid class="offer-details">
 
     <ion-row>
-      <ion-col col-12>
-        <div class="detail-page-product-title">
-          {{currentOffer?.productName}}
-        </div>
-        <div class="detail-page-product-discription">
-          {{currentOffer?.discription}}
-        </div>
+      <ion-col col-6>
+        <a href="#" class="tag">
+          <span class="rotate etail-page-currency">QAR</span>
+          <span class="detail-page-price-marker">{{currentOffer?.price}}</span>
+        </a>
+      </ion-col>
+      <ion-col col-6>
+        <a href="#" class="tag" style="float: right;">
+          <span class="detail-offer-marker">{{currentOffer?.offer}}%</span>
+          <span class="">OFF</span>
+        </a>
       </ion-col>
     </ion-row>
 
-    <ion-row>
-      <ion-col col-12>
-        <div class="price-container">
-          <span class="rotate yellow-bg">QAR</span>
-          <span class="detail-page-price-marker yellow-bg">{{currentOffer?.price}}</span>
-        </div>
-      </ion-col>
-    </ion-row>
+
+
+
 
     <ion-row class="border-bottom">
-      <ion-col col-11 >
+      <ion-col col-11>
         <ion-label color="theme" class="font-bold detail-view-store-name">Store Details</ion-label>
         <span color="theme">{{currentOffer?.store}}, </span>
         <br/>
         <span> {{currentOffer?.storeAddress}}</span>
       </ion-col>
       <ion-col col-1>
-        <ion-icon class="store-direction-icon" name="navigate"></ion-icon>
+        <ion-icon class="store-direction-icon" name="pin"></ion-icon>
       </ion-col>
     </ion-row>
 
@@ -77,13 +87,12 @@
         <span> {{currentOffer?.discription}}</span>
 
         <ul class="product-addon-data">
-          <li *ngFor='let addons of productAddonInfo'>{{addons}}</li>
-          
+          <li *ngFor='let addons of productAddonInfo; let i = index'>{{i}}) {{addons}}</li>
         </ul>
 
       </ion-col>
       <ion-col col-1>
-        <ion-icon class="store-direction-icon" name="navigate"></ion-icon>
+        <ion-icon class="store-direction-icon" name="heart"></ion-icon>
       </ion-col>
     </ion-row>
 

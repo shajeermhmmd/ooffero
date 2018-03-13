@@ -89,20 +89,7 @@ $list-md-border-color: #C7C6CB;
 @import "noto-sans";
 @import "custom";
 
-// @font-face{
-//   font-family: "Titillium Light";
-//   font-style: normal;
-//   font-weight: 400;
-//   src: url('../assets/fonts/Titillium/TitilliumWeb-Light.ttf');
-// }
-// $font-family-base: "Titillium Light";
-// body{
-//   font-family: "Titillium Light" !important;
-// }
-
-// $toolbar-background: #0097FF;
 $toolbar-background:  map-get($colors, theme);
+$tabs-md-tab-icon-size : 1px;
 
-// #0097FF - Blue color
-// #44B058 - green
-// #D9DDE0 - grey color
+

@@ -195,13 +195,15 @@ ion-scroll[scrollX] {
 }
 .dicount-rate{
     position: relative;
-    top: 7px;
+    top: 6px;
     font-weight: bold;
     font-size: 18px;
 }
 .discount-label{
-    font-size: 6px;
+    font-size: 14px;
     font-weight: bold;
+    position: relative;
+    top: 2px;
 }
 
 .item-container{
@@ -324,9 +326,7 @@ ion-scroll[scrollX] {
 .detail-page-product-discription{
     text-align: center;
     font-size: 15px;
-    font-weight: bold;
     color: #000;
-    font-style: italic;
 }
 
 .detail-page-offer-marker{
@@ -341,13 +341,19 @@ ion-scroll[scrollX] {
     // border :2px solid #D5171C;
 }
 .detail-page-price-marker{
-    float: left;
-    margin-left: -7px;
     font-size: 25px;
     font-weight: bold;
-    margin-top: -6px;
-    color: #D5171C;
-    
+    margin-left: -5px;
+}
+
+.detail-offer-marker{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.etail-page-currency{
+    margin-left: -2px;
+    font-size: 11px;
 }
 .offer-details{
     // border: 1px solid #D5171C;
@@ -385,6 +391,7 @@ ion-scroll[scrollX] {
 }
 
 .product-addon-data {
+    list-style: none;
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
@@ -417,5 +424,62 @@ ion-scroll[scrollX] {
         -ms-transform:skew(8deg) rotate(3deg);
          -o-transform:skew(8deg) rotate(3deg);
             transform:skew(8deg) rotate(3deg);
+}
+
+//////////////////////////
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; 
+  padding: 0;
+}
+
+.tags li {
+  float: left; 
+}
+
+.tag {
+  background: map-get($colors, theme);
+  border-radius: 3px 0 0 3px;
+  color: #fff;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.tag::before {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+
+.tag::after {
+  background: #fff;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid map-get($colors, theme);
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.tag:hover {
+  background-color: map-get($colors, theme);
+  color: #fff;
+}
+
+.tag:hover::after {
+   border-left-color: map-get($colors, theme); 
 }
 

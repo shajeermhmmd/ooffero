@@ -114,6 +114,66 @@ export class OffersPage {
       storeLogo: "assets/stores/3.jpg"
     },
     {
+      id: 1,
+      productName: "Febreze",
+      discription: "Air freshner 300ml",
+      moreProductInfo: "Windows 10 Home, Intel Core ig-82507GD Processor 1.60 GHz,6GB DDR4 RAM, 1 TB HDD, 13.3 Inch FHD-IPS LED",
+      offer: "56",
+      price: '9.50',
+      ImageSrc: "assets/products/3.jpg",
+      store: "LULU",
+      storeAddress : "Al-Hilal, Doha, Qatar",
+      storeLogo: "assets/stores/3.jpg"
+    },
+    {
+      id: 4,
+      productName: "Samsung",
+      discription: "Smart, FHD TV",
+      moreProductInfo: "Windows 10 Home, Intel Core ig-82507GD Processor 1.60 GHz,6GB DDR4 RAM, 1 TB HDD, 13.3 Inch FHD-IPS LED",
+      offer: "65",
+      price: 1.80,
+      ImageSrc: "assets/products/4.jpg",
+      store: "LULU",
+      storeAddress : "Al-wakra, Doha, Qatar",
+      storeLogo: "assets/stores/2.gif"
+    },
+    {
+      id: 4,
+      productName: "Samsung",
+      discription: "Smart, FHD TV",
+      moreProductInfo: "Windows 10 Home, Intel Core ig-82507GD Processor 1.60 GHz,6GB DDR4 RAM, 1 TB HDD, 13.3 Inch FHD-IPS LED",
+      offer: "65",
+      price: 1.80,
+      ImageSrc: "assets/products/4.jpg",
+      store: "LULU",
+      storeAddress : "Al-wakra, Doha, Qatar",
+      storeLogo: "assets/stores/2.gif"
+    },
+    {
+      id: 4,
+      productName: "Samsung",
+      discription: "Smart, FHD TV",
+      moreProductInfo: "Windows 10 Home, Intel Core ig-82507GD Processor 1.60 GHz,6GB DDR4 RAM, 1 TB HDD, 13.3 Inch FHD-IPS LED",
+      offer: "65",
+      price: 1.80,
+      ImageSrc: "assets/products/4.jpg",
+      store: "LULU",
+      storeAddress : "Al-wakra, Doha, Qatar",
+      storeLogo: "assets/stores/2.gif"
+    },
+    {
+      id: 3,
+      productName: "Gillette Blue2",
+      discription: "10 + 4pcs",
+      moreProductInfo: "Windows 10 Home, Intel Core ig-82507GD Processor 1.60 GHz,6GB DDR4 RAM, 1 TB HDD, 13.3 Inch FHD-IPS LED",
+      offer: "77",
+      price: 17.75,
+      ImageSrc: "assets/products/5.jpg",
+      store: "Qatar Mall",
+      storeAddress : "Najma Street, Doha, Qatar",
+      storeLogo: "assets/stores/3.jpg"
+    },
+    {
       id: 4,
       productName: "Samsung",
       discription: "Smart, FHD TV",
